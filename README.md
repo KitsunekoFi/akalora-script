@@ -52,3 +52,7 @@ Edit `train.sh`, and run it.
 Run `tensorboard.ps1` will start TensorBoard at http://localhost:6006/
 
 ![](./assets/tensorboard-example.png)
+
+### Origin
+https://github.com/Akegarasu/lora-scripts
+bdsqlsz
