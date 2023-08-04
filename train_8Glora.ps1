@@ -11,7 +11,7 @@ $v_parameterization = 0 # parameterization | 参数化 v2 非512基础分辨率�
 $train_data_dir = "./train/color_trace" # train dataset path | 训练数据集路径
 $reg_data_dir = ""	# reg dataset path | 正则数据集化路径
 $network_weights = "" # pretrained weights for LoRA network | 若需要从已有的 LoRA 模型上继续训练，请填写 LoRA 模型路径。
-$training_comment = "this LoRA model created from bdsqlsz by bdsqlsz'script" # training_comment | 训练介绍，可以写作者名或者使用触发关键词
+$training_comment = "test" # training_comment | 训练介绍，可以写作者名或者使用触发关键词
 $dataset_class = ""
 
 #差异炼丹法
@@ -21,8 +21,8 @@ $base_weights_multiplier = "1.0" #指定合并模型的权重，多个用空格�
 # Train related params | 训练相关参数
 $resolution = "1024,1024" # image resolution w,h. 图片分辨率，宽,高。支持非正方形，但必须是 64 倍数。
 $batch_size = 1 # batch size 一次性训练图片批处理数量，根据显卡质量对应调高。
-$max_train_epoches = 40 # max train epoches | 最大训练 epoch
-$save_every_n_epochs = 10 # save every n epochs | 每 N 个 epoch 保存一次
+$max_train_epoches = 1 # max train epoches | 最大训练 epoch
+$save_every_n_epochs = 1 # save every n epochs | 每 N 个 epoch 保存一次
 
 $gradient_checkpointing = 1 #梯度检查，开启后可节约显存，但是速度变慢
 $gradient_accumulation_steps = 0 # 梯度累加数量，变相放大batchsize的倍数
@@ -100,7 +100,7 @@ $conv_block_alphas="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" #convalph
 
 
 # Output settings | 输出设置
-$output_name = "sdxl_8glora" # output model name | 模型保存名称
+$output_name = "amiyaxl" # output model name | 模型保存名称
 $save_model_as = "safetensors" # model save ext | 模型保存格式 ckpt, pt, safetensors
 $mixed_precision = "bf16" # bf16效果更好，默认fp16
 $save_precision="bf16" # bf16效果更好，默认fp16
